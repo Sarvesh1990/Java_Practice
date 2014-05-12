@@ -78,12 +78,8 @@ public class Graph
 		    	{
 		    		Set <Integer> myInvSet= new HashSet<Integer>();
 					myInvSet.add(key);		
-					myInvGraph.myMap.put(myVal, myInvSet);
+					this.myMap.put(myVal, myInvSet);
 		    	}
-		    	else
-				{
-					myInvGraph.myMap.get(myVal).add(key);
-				}
 		    }
 		}
 		return myInvGraph;

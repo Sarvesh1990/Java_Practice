@@ -72,19 +72,7 @@ public class Graph
 		Graph myInvGraph = new Graph(myMap);
 		for (Integer key : this.myMap.keySet())
 		{
-		    for(Integer myVal : this.myMap.get(key))
-		    {
-		    	if(myInvGraph.myMap.get(myVal)==null)
-		    	{
-		    		Set <Integer> myInvSet= new HashSet<Integer>();
-					myInvSet.add(key);		
-					myInvGraph.myMap.put(myVal, myInvSet);
-		    	}
-		    	else
-				{
-					myInvGraph.myMap.get(myVal).add(key);
-				}
-		    }
+		    System.out.println("Key = " + key);
 		}
 		return myInvGraph;
 	}

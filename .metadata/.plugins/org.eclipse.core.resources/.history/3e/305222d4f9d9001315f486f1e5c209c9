@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
@@ -64,28 +63,5 @@ public class Graph
 		{
 			System.out.println(myStackIt.next());
 		}
-	}
-	
-	Graph Invert()
-	{
-		Map<Integer, Set<Integer>> myMap = new HashMap<Integer, Set<Integer>>();
-		Graph myInvGraph = new Graph(myMap);
-		for (Integer key : this.myMap.keySet())
-		{
-		    for(Integer myVal : this.myMap.get(key))
-		    {
-		    	if(myInvGraph.myMap.get(myVal)==null)
-		    	{
-		    		Set <Integer> myInvSet= new HashSet<Integer>();
-					myInvSet.add(key);		
-					myInvGraph.myMap.put(myVal, myInvSet);
-		    	}
-		    	else
-				{
-					myInvGraph.myMap.get(myVal).add(key);
-				}
-		    }
-		}
-		return myInvGraph;
 	}
 }
