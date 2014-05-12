@@ -53,7 +53,6 @@ public class Graph
 					continue;
 				myQueue.add(myInt);
 				myEdge[myInt]=a;
-				myDist[myInt]=myDist[a]+1;
 			}
 			myQueue.remove();
 			if(!myQueue.isEmpty())

@@ -54,6 +54,7 @@ public class Graph
 				myQueue.add(myInt);
 				myEdge[myInt]=a;
 				myDist[myInt]=myDist[a]+1;
+				System.out.println("Distance of 3 is "+ myDist[3]);
 			}
 			myQueue.remove();
 			if(!myQueue.isEmpty())
