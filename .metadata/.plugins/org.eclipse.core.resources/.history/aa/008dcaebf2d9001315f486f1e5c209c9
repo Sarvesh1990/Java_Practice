@@ -8,7 +8,6 @@ import java.util.Stack;
 public class Graph 
 {
 	Map<Integer, Set<Integer> > myMap;
-	boolean cycle=false;
 	int[] myArray = {-1, -1, -1, -1, -1, -1, -1};
 	Stack<Integer> myStack = new Stack <Integer> ();
 
@@ -42,9 +41,9 @@ public class Graph
 			{
 				if(!myStack.contains(myVal))
 				{
-					System.out.println("Cycle exists at "+ myVal +" , can't create topological order");
-					cycle=true;
-				}				//System.out.println("Returning because "+ myVal + " already checked");
+					System.out.println("Cycle exists");
+				}
+				//System.out.println("Returning because "+ myVal + " already checked");
 			}
 			else
 			{

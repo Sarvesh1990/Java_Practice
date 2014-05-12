@@ -9,8 +9,7 @@ public class main
 		myGraph.Insert(0,5);
 		myGraph.Insert(0,1);
 		myGraph.Insert(0,2);
-		myGraph.Insert(4,2);
-		//myGraph.Insert(2,1);
+		myGraph.Insert(2,3);
 		myGraph.Insert(6,4);
 		myGraph.Insert(3,5);
 		myGraph.Insert(5,2);
@@ -18,7 +17,7 @@ public class main
 		myGraph.Insert(1,4);
 		myGraph.Insert(3,6);
 		myGraph.Insert(3,4);
-		myGraph.Insert(3,2);
+		//myGraph.Insert(3,2);
 		boolean done = false;
 		while(!done)
 		{
@@ -26,7 +25,7 @@ public class main
 			{
 				if(myGraph.myArray[i]<0 && myGraph.myArray[i]!=-2)
 				{
-//					System.out.println("Calling dfs for "+i);
+					System.out.println("Calling dfs for "+i);
 					myGraph.myArray[i]=-2;
 					myGraph.dfs(i);
 				}

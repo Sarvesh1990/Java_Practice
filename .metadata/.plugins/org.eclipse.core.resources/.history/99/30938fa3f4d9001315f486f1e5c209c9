@@ -42,7 +42,7 @@ public class Graph
 			{
 				if(!myStack.contains(myVal))
 				{
-					System.out.println("Cycle exists at "+ myVal +" , can't create topological order");
+					System.out.println("Cycle exists, can't create topological order");
 					cycle=true;
 				}				//System.out.println("Returning because "+ myVal + " already checked");
 			}
