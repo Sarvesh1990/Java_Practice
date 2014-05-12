@@ -1,0 +1,15 @@
+public class SymbolTable {
+	String[] myArray = new String[5];
+	public void insert(String abc, int i)
+	{
+		myArray[i]=abc;
+	}
+	
+	public void print()
+	{
+		for(int j=0; j<myArray.length; j++)
+		{
+			System.out.println("Array is " + myArray[j]);
+		}
+	}
+}

@@ -1,0 +1,4 @@
+public class Graph 
+{
+	Map<Integer, Set<int> > myMap = new hashMap<Integer, Set<int> >;
+}

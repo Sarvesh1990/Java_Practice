@@ -1,0 +1,4 @@
+public class LinkedList {
+	String value;
+	LinkedList next;
+}

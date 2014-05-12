@@ -1,0 +1,6 @@
+import java.util.*;
+
+public class LinkedList {
+	Set <String> books= new HashSet<String>();
+	LinkedList next;
+}

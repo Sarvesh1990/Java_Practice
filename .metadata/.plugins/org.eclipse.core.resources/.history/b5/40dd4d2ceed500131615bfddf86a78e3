@@ -1,0 +1,25 @@
+public class SymbolTable {
+	LinkedList[] myArray = new LinkedList[5];
+	public void insert(String field, String person)
+	{
+		int i= (field.hashCode() & 0x7fffffff)% myArray.length;
+		System.out.println("Hash code is " + i);
+		if(myArray[i] == null)
+		{
+			LinkedList node = new LinkedList();
+			node.books.add(person);
+			myArray[i]=node;
+		}
+		else
+		{
+			LinkedList head=myArray[i];
+			while(head.next!=null)
+			{
+				head=head.next;
+			}
+			LinkedList node = new LinkedList();
+			node.books.add(person);
+			head.next=node;
+		}
+	}
+}
