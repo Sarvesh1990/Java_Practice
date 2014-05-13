@@ -1,4 +1,3 @@
-import java.util.HashMap;
 import java.util.*;
 public class main 
 {
@@ -9,7 +8,8 @@ public class main
 		myGraph.Insert(0,5);
 		myGraph.Insert(0,1);
 		myGraph.Insert(0,2);
-		myGraph.Insert(2,0);
+		myGraph.Insert(4,2);
+		//myGraph.Insert(2,1);
 		myGraph.Insert(6,4);
 		myGraph.Insert(3,5);
 		myGraph.Insert(5,2);
@@ -25,6 +25,7 @@ public class main
 			{
 				if(myGraph.myArray[i]<0 && myGraph.myArray[i]!=-2)
 				{
+//					System.out.println("Calling dfs for "+i);
 					myGraph.myArray[i]=-2;
 					myGraph.dfs(i);
 				}
@@ -34,7 +35,14 @@ public class main
 				}
 			}
 		}
-		//myGraph.IterateTopo();
+		if(!myGraph.cycle)
+			myGraph.IterateTopo();
+		Graph myInvGraph = myGraph.Invert();
+		for (Integer key : myInvGraph.myMap.keySet())
+		{
+			System.out.println("Testing git");
+			//System.out.println("For key "+ key + " set is " + myInvGraph.myMap.get(key));
+		}
 	}
 }
 
