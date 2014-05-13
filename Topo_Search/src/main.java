@@ -40,8 +40,7 @@ public class main
 		Graph myInvGraph = myGraph.Invert();
 		for (Integer key : myInvGraph.myMap.keySet())
 		{
-			//System.out.println("Git testing");
-			//System.out.println("For key "+ key + " set is " + myInvGraph.myMap.get(key));
+			System.out.println("For key "+ key + " set is " + myInvGraph.myMap.get(key));
 		}
 	}
 }
