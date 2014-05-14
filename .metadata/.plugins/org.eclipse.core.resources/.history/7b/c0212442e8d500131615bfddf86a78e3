@@ -1,7 +1,0 @@
-public class SymbolTable {
-	String[] myArray = new String[5];
-	public void insert(String abc, int i)
-	{
-		myArray[i]=abc;
-	}
-}
