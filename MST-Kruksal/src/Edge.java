@@ -1,9 +1,9 @@
 public class Edge implements Comparable <Edge> 
 {
-	int weight;
+	double weight;
 	int v;
 	int w;
-	Edge(int first, int second, int myWeight)
+	Edge(int first, int second, double myWeight)
 	{
 		v=first;
 		w=second;
@@ -23,6 +23,12 @@ public class Edge implements Comparable <Edge>
 	@Override
 	public int compareTo(Edge myEdge)
 	{
-		return this.weight - myEdge.weight;
+		 if((this.weight - myEdge.weight)>0)
+			 return 1;
+		 else if((this.weight - myEdge.weight)==0)
+			 return 0;
+		 else
+			 return -1;
+			 
 	}
 }

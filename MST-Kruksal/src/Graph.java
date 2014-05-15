@@ -6,7 +6,7 @@ import java.util.Set;
 public class Graph 
 {
 	Map<Integer, Set<Edge>> myMap = new HashMap <Integer, Set<Edge>>();
-	void Insert(int v, int w, int weight)
+	void Insert(int v, int w, double weight)
 	{
 		Edge myEdge = new Edge(v, w, weight);
 		if(myMap.get(v)==null)
